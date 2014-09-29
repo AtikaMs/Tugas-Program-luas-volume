@@ -1,0 +1,46 @@
+#include <stdio.h>
+main()
+{
+    float jumlah, hasil;
+    int s, r, t, jenis, benar;
+    char back;
+    printf("\t\t\tProgram menghitung Luas & Volume\a\n\n");
+    printf("\t\t\t\t\Created by : Atika Mayangsari\n");
+    printf("\t\t\t\t\t\tNIM : 313411139\n");
+ulang :
+    printf("pilihan : \n");
+    printf("1.Volume Kubus\n");
+    printf("2.Luas Lingkaran\n");
+    printf("3.Volume Silinder\n");
+    printf("Masukan pilihan anda :\a");
+    scanf("%d", &jenis);
+    switch(jenis)
+    {
+case 1:
+    printf("Masukan panjang sisi kubus =\a"); scanf("%d", &s);
+    printf("\n");
+    hasil = s * s * s;
+    printf("Volume Kubus adalah : s * s * s = %d\n\a", s * s * s);
+    printf("Selamat anda berhasil ..!!");
+    break;
+case 2:
+    printf("Masukan panjang jari-jari lingkaran :\a"); scanf("%d", &r);
+    printf("\n");
+    hasil = 3.14 * r * r;
+    printf("Luas Lingkaran adalah : %f\n\a", 3.14 * r * r);
+    printf("Selamat anda berhasil...!!");
+    break;
+case 3:
+    printf("Masukan Panjang jari-jari lingkaran :"); scanf("%d", &r);
+    printf("Masukan Tinggih silinder :"); scanf("%d", &t);
+    printf("\n");
+    hasil = 3.14 * r * r * t ;
+    printf("Luas segitiga adalah : 3.14 * r * r * t = %f\n\a ", 3.14 * r * r * t);
+    printf("Selamat anda berhasil...!!");
+    break;
+    default:
+    printf("Maaf kode yang anda masukan tidak tepat ...\n");
+    goto ulang;
+   }
+}
+
